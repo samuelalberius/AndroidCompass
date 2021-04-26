@@ -31,9 +31,9 @@ public class Sensors extends AppCompatActivity implements SensorEventListener {
     @Override
     public void onSensorChanged(SensorEvent event) {
         if (event != null) {
-            String updatedValues = (stringCreator(event));
+            String updatedValues = stringCreator(event);
             textView.setText(updatedValues);
-            ConstraintLayout root = (ConstraintLayout) findViewById(R.id.root);
+            ConstraintLayout root = findViewById(R.id.root);
             int color = Color.argb(255, rgb(Math.abs(event.values[2])), rgb(Math.abs(event.values[0])), rgb(Math.abs(event.values[1])));
             root.setBackgroundColor(color);
         }

@@ -21,10 +21,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void compassButton(View view) {
-        /*
-        Intent intent = new Intent(this, Compass.class);
-        startActivity(intent);
-         */
         Intent intent = new Intent(this, Compass.class);
         startActivity(intent);
     }
